@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <img src="static/img/logo.png"/>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('characters') }}">Characters</a></li>
+          <li><a href="{{ url_for('episodes') }}">Episodes</a></li>
+          <li><a href="{{ url_for('music') }}">Music</a></li>
+          <li><a href="{{ url_for('world_map') }}">World Map</a></li>
+        </ul>
+    </nav>
+    {% block body %}{% endblock %}
+</body>
+</html>
