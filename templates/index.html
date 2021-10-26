@@ -2,6 +2,7 @@
 
 
 {% block head %}
+<a href="{{ url_for('index') }}"><button class="button refresh">&#8635;</button></a>
 <style>
 body {
     background-image: url('static/img/index_background.jpg');
@@ -14,5 +15,8 @@ body {
 
 
 {% block body %}
+
+<h1>Welcome to the Adventure Time Fan Club!</h1>
+
 
 {% endblock %}

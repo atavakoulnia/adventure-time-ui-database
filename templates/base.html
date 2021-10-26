@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
-    <button class="button back">&larr;</button>
-    <button class="button forward">&rarr;</button>
-    <button class="button refresh">&#8635;</button>
+    <button class="button back" onclick="goBack()">&larr;</button>
+        <script>
+            function goBack() {
+            window.history.back();
+            }
+        </script>
+    <button class="button forward" onclick="goforward()">&rarr;</button>
+        <script>
+            function goforward() {
+            window.history.forward();
+            }
+        </script>
     <a href="{{ url_for('index') }}"><button class="button home">&#8962;</button></a>
     {% block head %}{% endblock %}
 </head>

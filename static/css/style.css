@@ -48,8 +48,35 @@ a:hover{
     /* background-color: lightblue;     */
     text-align: center;
     padding: 30px;
-  }
+}
 
-  #episode {
+#episode {
     width: 35px
-  }
+}
+
+#s, #e {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3%;
+    text-align: center;
+    z-index: 0;
+    color: white;
+}
+
+p {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3%;
+    text-align: center;
+    z-index: 0;
+    color: white;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3%;
+    text-align: center;
+    z-index: 0;
+    color: white;
+}

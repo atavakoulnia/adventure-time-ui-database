@@ -2,6 +2,7 @@
 
 
 {% block head %}
+<a href="{{ url_for('episodes') }}"><button class="button refresh">&#8635;</button></a>
 <style>
 body {
     background-image: url('static/img/episodes_background.jpg');
@@ -14,5 +15,36 @@ body {
 
 
 {% block body %}
+<h1>Episodes</h1>
+
+<div>
+    <h2>There are over 200 episodes of Adventure Time!</h2>
+    <h3>Read information about an episode</h3>
+</div>
+
+<div class="dropdown">
+    <form action="/action_page.php">
+      <label for="season" id="s">Select a Season:</label>
+      <select name="season" id="season">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select><br>
+      <label for="episode" id="e">Select an Episode:</label>
+      <input type="number" min="0" id="episode" name="episode" maxlength="2"><br>
+      <br><br>
+      <input type="submit" value="Advanced Search">
+    </form>
+</div>
+
+<p>Data of episode (title, description, rating) outputs below...</p>
+
 
 {% endblock %}
