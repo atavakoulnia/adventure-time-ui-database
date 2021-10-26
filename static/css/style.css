@@ -9,6 +9,18 @@ header img {
     width: 35%;
 }
 
+.button {
+    background-color: rgba(21, 255, 157, 0.562); 
+    color: black; 
+    border: 2px solid #00afce;
+    font-size: 20px;
+}
+  
+.button:hover {
+    background-color: #4caf4fa4;
+    color: white;
+}
+
 nav ul {
     text-align: center;
 }
@@ -30,3 +42,14 @@ a:hover{
     color: rgb(145, 145, 145);
     transform: translate(10px,10px)
 }
+
+.dropdown {
+    /* border: 2px solid #00afce; */
+    /* background-color: lightblue;     */
+    text-align: center;
+    padding: 30px;
+  }
+
+  #episode {
+    width: 35px
+  }

@@ -1,19 +1,45 @@
 {% extends 'base.html' %}
 
-
 {% block head %}
 <style>
-body {
-    background-image: url('static/img/characters_background.jpg');
-    background-repeat: no repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 1450px;
-}
+    body {
+        background-image: url('static/img/characters_background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
 </style>
 {% endblock %}
 
 
 {% block body %}
+
+<h1>Characters</h1>
+
+<div><h3>Adventure Time is filled with so many colorful characters! Here are a few of the main stars of the show.</h3></div>
+
+<div class="dropdown">
+<form action="/action_page.php">
+  <label for="season">Select a Season:</label>
+  <select name="season" id="season">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select><br>
+  <label for="episode">Select an Episode:</label>
+  <input type="number" min="0" id="episode" name="episode" maxlength="2"><br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+<p>Output below...</p>
 
 {% endblock %}
