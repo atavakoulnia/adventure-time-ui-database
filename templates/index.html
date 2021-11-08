@@ -5,7 +5,7 @@
 <a href="{{ url_for('index') }}"><button class="button refresh">&#8635;</button></a>
 <style>
 body {
-    background-image: url('static/img/index_background.jpg');
+    background-image: url('static/img/episodes_background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -15,8 +15,10 @@ body {
 
 
 {% block body %}
-
-<h1>Welcome to the Adventure Time Fan Club!</h1>
+<div id="container">
+    <h1>Welcome to the Adventure Time: The Episode Guide!</h1>
+    <h3>View a list of episodes of the hit television show...Adventure Time!</h3>
+</div>
 
 
 {% endblock %}
