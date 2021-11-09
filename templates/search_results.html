@@ -14,11 +14,7 @@ body {
 {% endblock %}
 <!-- --------------------------------SUBHEADING------------------------------------------- -->
 {% block body %}
-<h1>Episodes</h1>
-<div>
-    <h2>There are over 200 episodes of Adventure Time!</h2>
-    <h3>Read information about an episode</h3>
-</div>
+<h2>About this Episode</h2>
 <!-- --------------------------------FORM------------------------------------------- -->
 <form id=search action="/search_results" method="POST">
   <label for="season" id="s">Select a Season:</label>
@@ -39,7 +35,21 @@ body {
   <input type="submit" value="Search">
 </form>
 <!-- --------------------------------------------------------------------------- -->
-<p>Data of episode (season_number, episode_number, title, airdate, rating, desc) outputs below...</p>
+<table class="table">
+  <tbody>
+    <tr>
+      {% for data in scraper[0] %}
+      <th>{{ data }}</th>
+      {% endfor %}
+    </tr>
+    {% for row in scraper %}
+    <tr>
+      {% for key in row.keys() %}
+      <td>{{ row[key] }}</td>
+      {% endfor %}
+    </tr> 
+    {% endfor %}
+  </tbody>
+</table>
+
 {% endblock %}
-
-

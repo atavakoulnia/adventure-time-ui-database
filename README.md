@@ -12,4 +12,5 @@
 6. Then run "python3 -m venv ./venv”
 7. Now, activate the virtual environment by running “source ./venv/bin/activate”
 8. Run “pip3 install -r requirements.txt” to install the packages required to run the project
+9. Run "python3 socket_server.py" to start the server
 9. Finally, run “python3 app.py” and boom it should work! 
