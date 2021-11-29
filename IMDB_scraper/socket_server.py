@@ -10,7 +10,7 @@ print("[STARTING] server is starting...")
 
 #create server and listen
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((socket.gethostname(), 7299))
+s.bind((socket.gethostname(), 5102))
 s.listen(5)
 
 while True:

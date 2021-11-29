@@ -31,7 +31,7 @@ def search_results():
 
         #create a client 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((socket.gethostname(), 7299))
+        s.connect((socket.gethostname(), 5102))
         print("Connecting to server")
         print("Sending request")
 

@@ -2,6 +2,9 @@
     font-family: Chalkduster, fantasy;
 }
 
+body {
+    text-align: center;
+}
 header img {
     display: block;
     margin-left: auto;
@@ -79,4 +82,37 @@ h1, h2, h3 {
     text-align: center;
     z-index: 0;
     color: white;
+}
+
+.bmo{
+    bottom: 10%;
+    left: 0%;
+}
+.jake{
+    bottom: 10%;
+    right: 50%; 
+}
+.finn{
+    bottom: 10%;
+    right: 0%; 
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.table{
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    color: rgb(0, 0, 0);
+    background-color: #a1ecff67;
+}
+td{
+    color: rgb(255, 255, 255);
+    background-color: #a1ecff67;
 }

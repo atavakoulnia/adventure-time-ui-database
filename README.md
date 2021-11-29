@@ -11,6 +11,12 @@ Requirements
 
   1. Unzip the files in your testing environment.
 
+Setup Virtual Environment
+
+  1. Run “pip3 install virtualenv” to install the virtual environment
+  2. Then run "python3 -m venv ./venv”
+  3. Now, activate the virtual environment by running “source ./venv/bin/activate”
+
 Testing
 
   1. Run “pip3 install -r requirements.txt” to install the packages required to run the project

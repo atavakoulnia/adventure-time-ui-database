@@ -35,6 +35,12 @@ body {
   <input type="submit" value="Search">
 </form>
 <!-- --------------------------------------------------------------------------- -->
+<script>
+  function deleteRow(btn) {
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+  }
+</script>
 <table class="table">
   <tbody>
     <tr>
@@ -47,9 +53,58 @@ body {
       {% for key in row.keys() %}
       <td>{{ row[key] }}</td>
       {% endfor %}
+      <td><input type="button" value="Delete" onclick="deleteRow(this)"/></td>
     </tr> 
     {% endfor %}
   </tbody>
 </table>
-
+<!-- --------------------------------------------------------------------------- -->
+<table class="table">
+  <tbody>
+    <tr>
+      <th>Season</th>
+      <th># of Episodes</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>26</td>
+    </tr> 
+    <tr>
+      <td>2</td>
+      <td>26</td>
+    </tr> 
+    <tr>
+      <td>3</td>
+      <td>26</td>
+    </tr> 
+    <tr>
+      <td>4</td>
+      <td>26</td>
+    </tr> 
+    <tr>
+      <td>5</td>
+      <td>52</td>
+    </tr> 
+    <tr>
+      <td>6</td>
+      <td>43</td>
+    </tr> 
+    <tr>
+      <td>7</td>
+      <td>26</td>
+    </tr> 
+    <tr>
+      <td>8</td>
+      <td>27</td>
+    </tr> 
+    <tr>
+      <td>9</td>
+      <td>14</td>
+    </tr> 
+    <tr>
+      <td>10</td>
+      <td>16</td>
+    </tr> 
+  </tbody>
+</table>
 {% endblock %}
