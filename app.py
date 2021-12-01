@@ -40,7 +40,6 @@ def search_results():
             msg = s.recv(1024)
             data = pickle.loads(msg)    #serialize using pickle
             scraper.append(data)
-            # print(scraper)
 
         #function to send request to server
         def send(msg):
