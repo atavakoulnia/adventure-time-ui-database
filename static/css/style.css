@@ -85,16 +85,22 @@ h1, h2, h3 {
 }
 
 .bmo{
-    bottom: 10%;
-    left: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .jake{
-    bottom: 10%;
-    right: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .finn{
-    bottom: 10%;
-    right: 0%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .container2{
     display: flex;
