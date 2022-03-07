@@ -1,5 +1,5 @@
 # Adventure Time Episode List
-A website designed to display data about episodes of the TV show Adventure Time
+A website designed to display data about episodes of the cartoon Adventure Time
 
 
 ## Introduction
