@@ -18,5 +18,8 @@ This project includes a microservice provided by my colleague Long March:
 - Run ``` python3 app.py ``` to run website! 
 
 ## Website Demonstrations 
+Homepage
 ![Homepage](https://github.com/atavakoulnia/adventure-time-ui-database/blob/main/static/img/homepage-example.gif)
+
+Database Search
 ![DB](https://github.com/atavakoulnia/adventure-time-ui-database/blob/main/static/img/db-example.gif)
